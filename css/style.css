@@ -845,16 +845,22 @@ footer {
     margin-right: 10%; } }
 @media screen and (max-width: 767px) {
   main {
-    padding-top: 100px; }
+    padding-top: 0px; }
 
   .nav_bar {
     height: 100px; }
     .nav_bar img {
-      height: 30%;
+      height: 75%;
       width: auto; }
 
-  .downloadnow {
-    font-size: 16px; }
+  .poster {
+    padding: 8rem 0rem; }
+    .poster h1 {
+      font-size: 48px; }
+    .poster .slogan {
+      width: 90%; }
+    .poster .downloadnow {
+      font-size: 16px; }
 
   .downloading_link {
     bottom: -63.5px; }
@@ -1039,11 +1045,10 @@ footer {
       margin-bottom: 5%; }
 
   footer {
-    display: block;
-    padding-left: 4%; }
+    margin-top: 20px; }
     footer div {
-      max-width: 300px;
-      margin-bottom: 7%; }
+      margin-bottom: 7%;
+      flex-basis: 100%; }
 
   .caption {
     font-size: 20px; }
@@ -1063,9 +1068,10 @@ footer {
     font-size: 20px; }
 
   .info .caption {
-    font-size: 20px; }
+    font-size: 12px;
+    text-align: center; }
   .info p {
-    font-size: 100%;
+    font-size: 14px;
     text-align: center; }
 
   .github_rating table {

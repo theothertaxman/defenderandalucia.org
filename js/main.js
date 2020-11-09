@@ -9,7 +9,7 @@ $(document).ready(function() {
         $('body').toggleClass('lock')
         $('.nav').toggleClass('visible')
     })
-})    
+})
 
 let lastScrollPosition = 0
 //const left = parseFloat($('.code').css('left'))

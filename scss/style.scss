@@ -1160,21 +1160,31 @@ footer {
 
 @media screen and (max-width: 767px) {
     main {
-        padding-top: 100px;
+        padding-top: 0px;
     }
 
     .nav_bar {
         height: 100px;
 
         img {
-            height: 30%;
+            height: 75%;
             width: auto;
         }
     }
 
-    .downloadnow {
-        font-size: 16px;
+    .poster {
+      padding: 8rem 0rem;
+      h1 {
+        font-size: 48px;
+      }
+      .slogan {
+        width: 90%;
+      }
+      .downloadnow {
+          font-size: 16px;
+      }
     }
+
 
     .downloading_link {
         bottom: -63.5px;
@@ -1421,12 +1431,11 @@ footer {
     }
 
     footer {
-        display: block;
-        padding-left: 4%;
+      margin-top: 20px;
 
         div {
-            max-width: 300px;
             margin-bottom: 7%;
+            flex-basis: 100%;
         }
     }
 
@@ -1464,11 +1473,12 @@ footer {
 
     .info {
         .caption {
-            font-size: 20px;
+            font-size: 12px;
+            text-align: center;
         }
 
         p {
-            font-size: 100%;
+            font-size: 14px;
             text-align: center;
         }
     }
