@@ -20,17 +20,23 @@ html, body {
   z-index: 50;
   height: 104px;
   width: 100%;
-  background-color: #fff; }
-  .nav_bar img {
-    width: 10rem;
-    height: auto;
-    margin: 0px auto; }
+  background-color: #fff;
+  padding-left: 5rem;
+  padding-right: 5rem; }
   .nav_bar a {
-    color: #635c73;
+    color: #333333;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    display: inline-block; }
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .nav_bar a:hover {
+      text-decoration: underline; }
+    .nav_bar a img {
+      width: 10rem;
+      height: auto;
+      margin: 0px auto; }
   .nav_bar li {
     list-style-type: none;
     margin: 0 2%; }
@@ -46,7 +52,7 @@ html, body {
 .buy_now {
   color: #fff !important;
   padding: 9px 30px;
-  background-color: #8d81ac;
+  background-color: #111111;
   border-radius: 20px; }
 
 .nav {
@@ -77,7 +83,7 @@ html, body {
   padding-top: 7%; }
 
 .version {
-  color: #848e97;
+  color: #666666;
   text-transform: uppercase;
   font-size: 1em;
   font-family: 'Open Sans';
@@ -99,7 +105,7 @@ html, body {
   width: 100%;
   bottom: -73.5px; }
   .downloading_link p {
-    color: #848e97;
+    color: #666666;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.875em;
     font-weight: 600; }
@@ -120,10 +126,10 @@ main {
 
 .using_range {
   padding: 0 12%;
-  padding-top: 73.5px;
+  padding-top: 20px;
   text-align: center; }
   .using_range h2 {
-    color: #635c73;
+    color: #333333;
     text-transform: uppercase;
     font-size: 3.375em;
     font-family: 'Montserrat', sans-serif;
@@ -165,7 +171,7 @@ main {
   padding-top: 7.3913043478%;
   position: relative; }
   .usage h3 {
-    color: #8d81ac;
+    color: #111111;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -193,7 +199,7 @@ main {
       margin-top: 0;
       font-size: 1em; }
     .feature div p {
-      color: #848e97;
+      color: #666666;
       font-size: 0.875em; }
 
 .feature:last-child {
@@ -231,7 +237,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   vertical-align: middle; }
   .social_networks p {
-    color: #848e97;
+    color: #666666;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-weight: 600;
@@ -295,12 +301,12 @@ hr {
       font-size: 1.25em;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
-      color: #635c73; }
+      color: #333333; }
     .dossier .nickname .nick_link {
       margin-top: 0;
       font-weight: 600;
       font-size: 1em;
-      color: #8d81ac;
+      color: #111111;
       font-family: 'Montserrat', sans-serif;
       text-decoration: none; }
   .dossier .characteristic {
@@ -310,13 +316,13 @@ hr {
     color: #333333; }
     .dossier .characteristic .nick_link {
       margin-right: 0.5%;
-      color: #8d81ac;
+      color: #111111;
       text-decoration: none; }
 
 .last_update {
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
-  color: #848e97;
+  color: #666666;
   margin-top: 5%;
   text-align: center; }
 
@@ -450,8 +456,8 @@ hr {
   margin-bottom: 38.05px; }
 
 .delimiter {
-  color: #8d81ac;
-  background-color: #8d81ac;
+  color: #111111;
+  background-color: #111111;
   height: 4px;
   width: 20%;
   margin: 12% auto 10%; }
@@ -482,7 +488,7 @@ hr {
   .subscription p {
     margin: 0;
     text-transform: capitalize;
-    color: #635c73;
+    color: #333333;
     font: 700 1.5em 'Montserrat'; }
   .subscription input {
     margin-left: auto;
@@ -494,7 +500,7 @@ hr {
     border-radius: 30px;
     outline: none;
     min-width: 200px;
-    color: #848e97; }
+    color: #666666; }
   .subscription ::-webkit-input-placeholder {
     color: #d3d5d9; }
   .subscription ::-moz-placeholder {
@@ -506,7 +512,7 @@ hr {
 
 .subcribe {
   color: white;
-  background-color: #8d81ac;
+  background-color: #111111;
   text-transform: uppercase;
   border: none;
   outline: none;
@@ -536,7 +542,7 @@ hr {
     text-decoration: none;
     font: 600 0.9em 'Montserrat';
     background-color: #f4f4f4;
-    color: #8d81ac;
+    color: #111111;
     border-radius: 5px;
     padding: 10px 10px 10px 30px; }
 
@@ -552,10 +558,10 @@ hr {
   margin-bottom: 50px; }
 
 .heading {
-  color: #8d81ac; }
+  color: #111111; }
 
 .description {
-  color: #848e97;
+  color: #666666;
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 0; }
@@ -611,13 +617,13 @@ footer {
     color: #222;
     padding: 5px; }
     footer a:hover {
-      color: #007457;
+      color: #666666;
       text-decoration: none; }
 
 .bottom_logo img {
   width: 100%; }
 .bottom_logo p {
-  color: #848e97;
+  color: #666666;
   font: 600 0.9em 'Montserrat'; }
 
 .caption {
@@ -635,20 +641,20 @@ footer {
     margin: 0 auto; }
     .bottom_navbar ul a {
       text-decoration: none;
-      color: #8d81ac;
+      color: #111111;
       font: 600 0.85em 'Montserrat'; }
     .bottom_navbar ul li {
       margin: 2% 0;
       display: block; }
 
 .contact_information span {
-  color: #848e97;
+  color: #666666;
   text-transform: uppercase;
   font: 600 0.8em 'Montserrat'; }
 .contact_information address {
   font-style: normal;
   font: 600 0.85em 'Montserrat';
-  color: #848e97;
+  color: #666666;
   text-transform: capitalize;
   line-height: 2; }
 
@@ -671,7 +677,7 @@ footer {
   padding-left: 0; }
 .info p {
   font: 600 0.9em 'Montserrat';
-  color: #848e97;
+  color: #666666;
   line-height: 1.75;
   text-align: center; }
 
@@ -682,6 +688,11 @@ footer {
     font: 400 0.9em 'Montserrat';
     color: #a1a1a1;
     padding: 0px; }
+
+.playlist {
+  display: flex; }
+  .playlist iframe {
+    padding: 1rem; }
 
 @media screen and (max-width: 1300px) {
   .pricicng_grid {
@@ -811,11 +822,19 @@ footer {
   .code {
     width: 150%; }
 
-  .nav_bar a {
-    font-size: 14px; }
+  .nav_bar {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+    .nav_bar a {
+      font-size: 14px; }
 
   .nav {
-    flex-basis: 400px; } }
+    flex-basis: 400px; }
+
+  .playlist {
+    display: inline; }
+    .playlist iframe {
+      padding: 1rem; } }
 @media screen and (max-width: 830px) {
   .using_range {
     padding-left: 2%;
@@ -924,7 +943,7 @@ footer {
         border-radius: 10px;
         top: 20px;
         bottom: 20px;
-        background-color: #8d81ac;
+        background-color: #111111;
         transition: all 0.5s;
         left: 0;
         opacity: 0; }
@@ -947,7 +966,7 @@ footer {
     .nav li:hover :before {
       opacity: 1; }
     .nav li:hover a {
-      color: #8d81ac; }
+      color: #111111; }
 
   .nav.visible {
     right: 0;
@@ -982,7 +1001,7 @@ footer {
       margin-right: 20px;
       transition: all 0.5s; }
     .nav_networks i:hover {
-      color: #8d81ac; }
+      color: #111111; }
 
   .burger {
     display: block;

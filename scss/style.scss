@@ -1,6 +1,6 @@
-$deafult_violet: #8d81ac;
-$text_violet: #635c73;
-$deafult_gray: #848e97;
+$deafult_violet: #111111;
+$text_violet: #333333;
+$deafult_gray: #666666;
 
 * {
     box-sizing: border-box;
@@ -29,12 +29,9 @@ html, body {
     height: 104px;
     width: 100%;
     background-color: #fff;
+    padding-left: 5rem;
+    padding-right: 5rem;
 
-    img {
-        width: 10rem;
-        height: auto;
-        margin: 0px auto;
-    }
 
 
     a {
@@ -43,6 +40,16 @@ html, body {
         font-family: 'Montserrat', sans-serif;
         font-size: 1em;
         display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+    img {
+        width: 10rem;
+        height: auto;
+        margin: 0px auto;
+    }
     }
 
 
@@ -159,7 +166,7 @@ main {
 
 .using_range {
     padding: 0 12%;
-    padding-top: 73.5px;
+    padding-top: 20px;
     text-align: center;
 
     h2 {
@@ -799,7 +806,7 @@ footer {
       padding: 5px;
 
       &:hover {
-        color: #007457;
+        color: $deafult_gray;
         text-decoration: none;
       }
 
@@ -904,6 +911,12 @@ footer {
   }
 }
 
+.playlist {
+  display: flex;
+  iframe {
+    padding: 1rem;
+  }
+}
 
 
 @media screen and (max-width: 1300px) {
@@ -1093,6 +1106,7 @@ footer {
             margin-bottom: 3%;
         }
 
+
         input {
             width: 40%;
             margin-right: 10%;
@@ -1108,6 +1122,8 @@ footer {
         width: 150%;
     }
     .nav_bar {
+      padding-left: 2rem;
+      padding-right: 2rem;
         a {
             font-size: 14px;
         }
@@ -1115,6 +1131,13 @@ footer {
 
     .nav {
         flex-basis: 400px;
+    }
+
+    .playlist {
+      display: inline;
+      iframe {
+        padding: 1rem;
+      }
     }
 }
 
