@@ -1,0 +1,23 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }} </title>
+  <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+  <link>{{ site.url }}</link>
+  <link type="application/atom+xml" href="{{ site.url }}/feed.xml" rel="self"/>
+  <link type="text" href="{{ site.url }}" rel="alternate"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  {% for post in site.posts limit:10 %}
+  {% if post.published != false %}
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ site.url }}{{ post.url }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ post.id }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endif %}
+  {% endfor %}
+</feed>

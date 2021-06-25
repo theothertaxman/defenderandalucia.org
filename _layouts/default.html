@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="no-js">
+  <head>
+    <!-- Generic metadata for search engines-->
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="image" content="{{ site.url }}/images/hero-share.jpg">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="{{ page.title }}">
+    <meta itemprop="description" content="{{ site.description }}">
+    <meta itemprop="image" content="{{ site.url }}/images/hero-share.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:site" content="@DfnderAndalucia">
+    <meta name="twitter:image:" content="{{ site.url }}/images/hero-share.jpg">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/images/hero-share.jpg">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:locale" content="es-ES">
+    <meta property="og:type" content="website">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" id="frontierline-css" href="/themes/frontierline-rm/style.css" type="text/css" media="all" />
+
+  </head>
+
+  <body class="{% if page.home%}blog{% else %}post-template-default single single-post single-format-standard color-scheme-none pattern-none{% endif %}">
+    <nav id="nav-global" class="nav-global can-stick">
+
+    <div class="content">
+      <div class="logo"><a href="/" title="Defender Andalucía"></a></div>
+
+      <p class="fx-cta" style="display:none;"><a href="https://www.mozilla.org/firefox/channel/desktop/#nightly" rel="external" class="button button-green">Download Firefox Nightly</a></p>
+
+      <div class="nav-mozilla">
+        <span class="toggle" role="button" aria-controls="nav-mozilla-menu" aria-expanded="false" tabindex="0">Menu</span>
+        <ul class="nav-mozilla-menu" id="nav-mozilla-menu">
+          <!-- <li class="nav&#45;global&#45;twitter"><a href="https://twitter.com/MozillaReleases" rel="external">Documentos</a></li> -->
+          <li class="nav-global-twitterDISABLE"><a href="/documentos" rel="external">Documentos</a></li>
+          <li class="nav-global-firefoxDISABLE"><a href="/participa" rel="external">Participa</a></li>
+          <!-- <li class="nav&#45;global&#45;donateDISABLE"><a href="https://wiki.mozilla.org/RapidRelease/Calendar" rel="external">Release calendar</a></li> -->
+        </ul>
+      </div>
+
+      <a class="page-top" href="#masthead" title="Go to the top of the page">Top</a>
+    </div>
+  </nav>
+
+  <header id="masthead" class="section">
+    <div class="site-id">
+      <div class="site-title-wrap content">
+        {% if page.home%}
+            <h1 id="site-title"><span>{{ site.title }}</span></h1>
+        {% else %}
+        <a href="/"><h1 id="site-title"><span>{{ site.title }}</span></h1></a>
+        {% endif %}
+              <p id="site-description"><span>{{ site.description }}</span></p>
+                </div>
+    </div>
+  </header>
+  <div class="site-wrap">
+
+  <nav id="nav-util" class="can-stick ">
+    <ul class="content">
+  <li>
+  </li>
+    </ul>
+  </nav>
+
+    <main id="content" role="main">
+
+    {{ content }}
+
+      </div>
+    </div>
+</main>
+  </div><!-- /.site-wrap -->
+
+
+
+<footer id="site-info" class="section">
+  <div class="content">
+    <nav class="primary">
+      <div class="logo">
+        <!-- <h3>DEFENDER<br>ANDALUCÍA</h3> -->
+        <img src="/images/logo.png" alt="Logo de Defender Andalucía" width="250">
+      </div>
+      <section class="mozilla">
+        <h5>Nacional</h5>
+        <ul class="mozilla-links">
+          <li><a href="#" data-link-type="footer" data-link-name="Documentos">Documentos</a></li>
+          <li><a href="#" data-link-type="footer" data-link-name="Participa">Participa</a></li>
+          <li class="social-icons">
+            <a href="https://twitter.com/DfnderAndalucia" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.facebook.com/Defender-Andaluc%C3%ADa-1944798069093522" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/defenderandalucia/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC0CaBRYWe39D7t_rgqMUirQ" target="_blank"><i class="fa fa-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+      <section class="firefox">
+        <h5>Territorial</h5>
+        <ul class="firefox-links">
+          <li>
+            Alcalá de Guadaíra
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            Cádiz
+          </li>
+          <li>
+            Diáspora
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            Écija
+          </li>
+          <li>
+            Granada
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            Huelva
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            Málaga
+          </li>
+          <li>
+            Sevilla
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <nav class="secondary">
+        <div class="small-links">
+          <!-- <ul> -->
+          <!--   <li><a rel="nofollow" href="https://www.mozilla.org/privacy/" data&#45;link&#45;type="footer" data&#45;link&#45;name="Privacy">Website Privacy Notice</a></li> -->
+          <!--   <li><a rel="nofollow" href="https://www.mozilla.org/privacy/websites/#cookies" data&#45;link&#45;type="footer" data&#45;link&#45;name="Cookies">Cookies</a></li> -->
+          <!--   <li><a rel="nofollow" href="https://www.mozilla.org/about/legal/" data&#45;link&#45;type="footer" data&#45;link&#45;name="Legal">Legal</a></li> -->
+          <!-- </ul> -->
+          <p class="license">
+          {{ site.title }}, {{ 'now' | date: "%Y"  }}. Todo el contenido de esta web está bajo licencia <a href="https://creativecommons.org/" rel="external license">Creative Commons</a>.</p>
+        </div>
+    </nav>
+  </div>
+</footer>
+
+<script type="text/javascript">
+    function launchA() {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-200508438-1', 'defenderandalucia.org');
+	ga('require', 'linkid', 'linkid.js');
+	ga('require', 'displayfeatures');
+	ga('send', 'pageview');
+  }
+    (function(){
+    if(window.localStorage['ga-consent'] == "1") {
+    launchA();
+    } else if(window.localStorage['ga-consent'] == "opt-out") {
+    console.log("You won't find G-Analytics here")
+    } else {
+    // Ask for it
+    let d = document.createElement('div')
+    d.className = "footer-tab"
+    d.innerHTML = "Usamos las cookies de Google Analytics para mejorar la experiencia de uso en nuestra web"
+
+    if(navigator.doNotTrack == "1") {
+    d.innerHTML = "<p>You have enabled Do Not Track in your browser. Google Analytics won't be loaded on this page unless you opt-in.</p>"
+    }
+
+    let acceptBtn = document.createElement('button')
+    acceptBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = '1'; launchA(); document.body.removeChild(d) })
+    acceptBtn.innerHTML = "Acepto"
+    acceptBtn.style.marginRight = "5px"
+    let denyBtn = document.createElement('button')
+    denyBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = 'opt-out'; document.body.removeChild(d) })
+    denyBtn.innerHTML = "Rechazo"
+    denyBtn.style.marginLeft = "5px"
+    let z = document.createElement('div')
+    z.style.textAlign = "center"
+    z.appendChild(acceptBtn)
+    z.appendChild(denyBtn)
+    d.appendChild(z)
+    d.style.height = "92px"
+    d.style.padding = "10px"
+    d.style.display = "block"
+    d.style.position = "fixed"
+    d.style.background = "white"
+    d.style.bottom = "0"
+    d.style.left = 0
+    d.style.right = 0
+    d.style.paddingLeft = "25px"
+    d.style.paddingRight = "25px"
+    document.body.appendChild(d)
+    }
+    })()
+
+  </script>
+
+
+  </body>
+</html>

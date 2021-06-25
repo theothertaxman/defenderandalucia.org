@@ -1,0 +1,65 @@
+---
+layout: default
+title: Release Management Blog
+home: true
+prefix: [1,2,3,4,5,6]
+---
+<div class="content posts-grid hfeed">
+    <!-- This loops through the paginated posts -->
+    {% for post in paginator.posts %}
+    {% assign prefix = page.prefix | sample: 2 %}
+
+    <article class="post-summary post type-post" >
+
+      <header class="entry-header">
+        <a href="{{ post.url }}" class="entry-link" title="Permanent link to “These Weeks in Firefox: Issue 25”" rel="bookmark">
+                  <div class="post-image post-image-large">
+                      <!-- <img class="wp&#45;post&#45;image image&#45;fallback color&#45;{{ prefix[3] }}" width="600" height="330" src="https://blog.nightly.mozilla.org/wp&#45;content/themes/frontierline/img/fallbacks/pattern&#45;{{ prefix[0] }}.png"> -->
+      <img class="wp-post-image image-fallback" width="600" height="auto" src="{{ post.image }}">
+                    </div>
+                <h2 class="entry-title">{{ post.title }}</h2>
+        </a>
+
+          <div class="entry-info">
+            <address class="vcard">
+          {% if post.author != null %}
+            <a href="{{ site.authors[post.author].web }}">{{ site.authors[post.author].display_name }}</a>
+        {% endif %}
+        </address>
+          <time class="date">{{ post.date | date_to_string }}</time>
+        </div>
+      </header>
+       {{ post.excerpt | strip_html | truncatewords: 65 }}
+    </article>
+    {% endfor %}
+</div>
+
+
+<!-- Pagination links -->
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  <ul class='page-numbers'>
+    {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li><span class='page-numbers current'>{{ page }}</span></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a  class='page-numbers' href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+  {% else %}
+    <li><span>Next &raquo;</span></li>
+
+  {% endif %}
+</ul>
+</nav>
+{% endif %}
