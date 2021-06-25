@@ -459,7 +459,7 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 #site-info nav:after { clear: both; content: ''; display: block; height: 0; visibility: hidden; }
 #site-info section { margin-bottom: 40px; }
 #site-info .logo { margin-bottom: 40px; }
-#site-info .logo a { background: url("../images/logo.png") no-repeat; -webkit-background-size: 100px, 32px; background-size: 100px, 32px; overflow: hidden; text-indent: 120%; white-space: nowrap; display: inline-block; height: 32px; width: 100px; }
+#site-info .logo a { background: url("img/logo.png") no-repeat; -webkit-background-size: 100px, 32px; background-size: 100px, 32px; overflow: hidden; text-indent: 120%; white-space: nowrap; display: inline-block; height: 32px; width: 100px; }
 #site-info .primary { font-size: 16px; font-size: 0.8888888889rem; }
 #site-info .secondary { font-size: 12px; font-size: 0.6666666667rem; }
 #site-info .small-links li { display: inline; padding-right: 20px; }
@@ -496,7 +496,7 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 .nav-global .content { padding: 0 20px; }
 .nav-global .logo { font-size: 12px; font-size: 0.6666666667rem; -webkit-transition: width 250ms ease-in-out, height 250ms ease-in-out; transition: width 250ms ease-in-out, height 250ms ease-in-out; float: right; height: 20px; line-height: 1; width: 63px; }
 @media screen and (min-width: 760px) { .nav-global .logo { font-size: 14px; font-size: 0.7777777778rem; } }
-.nav-global .logo a { -webkit-background-size: cover; background-size: cover; overflow: hidden; text-indent: 120%; white-space: nowrap; -webkit-transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; background-image: url("http://defenderandalucia.org/img/logo.jpg"); background-repeat: no-repeat; display: block; height: 100%; width: 100%; }
+/* .nav-global .logo a { -webkit-background-size: cover; background-size: cover; overflow: hidden; text-indent: 120%; white-space: nowrap; -webkit-transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; transition: background-size 250ms ease-in-out, -webkit-background-size 250ms ease-in-out; background-image: url("img/logo.png"); background-repeat: no-repeat; display: block; height: 100%; width: 100%; } */
 @media screen and (min-width: 1000px) { .nav-global .logo { float: left; } }
 .nav-global .page-top { -webkit-transition: margin-top 250ms ease-in-out; transition: margin-top 250ms ease-in-out; color: #000; float: right; margin-right: 30px; margin-top: -4em; text-decoration: none; text-transform: lowercase; }
 @media screen and (min-width: 1000px) { .nav-global .page-top { margin-right: 0; } }
