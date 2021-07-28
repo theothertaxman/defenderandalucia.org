@@ -450,8 +450,8 @@ textarea:-moz-ui-invalid:not(output), input[type=email]:-moz-ui-invalid:not(outp
 @media screen and (min-width: 1000px) and (min-width: 760px) { #site-info h5 { font-size: 16px; font-size: 0.8888888889rem; } }
 @media screen and (min-width: 1000px) and (min-width: 1000px) { #site-info h5 { font-size: 18px; font-size: 1rem; } }
 
-#site-info li.social-icons { font-size: 1.2rem; padding-top: 10px; }
-#site-info li.social-icons a { padding-right: 10px; }
+#site-info li.icons { font-size: 1.2rem; padding-top: 10px; }
+#site-info li.icons a { padding-right: 10px; }
 #site-info ul.firefox-links li a { padding-left: 5px; }
 
 #site-info li { list-style-type: none; margin: 0 0 .8em; }
