@@ -10,13 +10,13 @@
 
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="{{ page.title | default: site.title}}">
-    <meta itemprop="description" content="{{ page.excerpt | default: site.description }}">
+    <meta itemprop="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta itemprop="image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/images/hero-share.jpg{% endif %}">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title | default: site.title}}">
-    <meta name="twitter:description" content="{{ page.excerpt | default: site.description }}">
+    <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta name="twitter:site" content="@DfnderAndalucia">
     <meta name="twitter:image:" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/images/hero-share.jpg{% endif %}">
 
