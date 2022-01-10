@@ -49,7 +49,13 @@ authors:
     gravatar: 7ca086c83f7e95ef38eb4b94cc3272ca
     web: https://defenderandalucia.org
     twitter: dfnderandalucia
-    github: pr3ssh
+    github:
+  curro:
+    display_name: Curro Cuberos
+    gravatar: 7ca086c83f7e95ef38eb4b94cc3272ca
+    web: https://defenderandalucia.org
+    twitter: CuberosCurro
+    github:
 
 paginate: 12
 excerpt_separator: "<!-- more -->"
