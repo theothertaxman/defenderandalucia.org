@@ -21,5 +21,4 @@ Hace pocos días desde la organización política Defender Andalucía difundimos
 
 Coordinadora Nacional de Defender Andalucía
 
-Andalucía, a 2 de enero de 2021
-
+Andalucía, a 2 de enero de 2022
