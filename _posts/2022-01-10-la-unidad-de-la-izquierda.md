@@ -33,6 +33,6 @@ Entiendo que estos debates son ásperos, y que es más agradable celebrar al un�
 
 ---
 
-<img src="/images/posts/daiga-ellaby--5KjF_u5YzI-unsplash.jpg" alt="Blas Infante vestido de Papá Noel en un cartel de felicitación de fiestas de Defender Andalucía" style="width:50%;" />
+<img src="/images/posts/daiga-ellaby--5KjF_u5YzI-unsplash.jpg" alt="Foto de dos manos unidas y una abraza a la otra" style="width:50%;" />
 <br />
 <small>Foto de <a href="https://unsplash.com/@daiga_ellaby?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daiga Ellaby</a> en <a href="https://unsplash.com/s/photos/unite-hands?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small>
